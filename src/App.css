@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url("./components/page-background.jpg");
+  background-size: cover;
+  /* display: flex;
+  flex-direction: column;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; */
+}

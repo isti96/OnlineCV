@@ -1,0 +1,31 @@
+.avatar-pic {
+  width: 150px;
+  height: 190px;
+  border-radius: 100%;
+}
+
+.app-home {
+  position: absolute;
+  height: calc(100vh - (50px + 50px));
+  width: 100%;
+  min-width: 100%;
+  margin-top: 50px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-home p {
+  padding: 20px;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.icon-container > * {
+  padding: 15px;
+}
+
+.parag {
+    display: flex;
+    justify-content: center;
+}

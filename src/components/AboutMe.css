@@ -1,0 +1,32 @@
+.app-aboutme {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.page-container {
+    width: 500px;
+    height: 1000px;
+    background-color: rgb(0, 102, 255);
+    align-items: center;
+    border-radius: 5%;
+    padding: 20px;
+    
+}
+
+.aboutme-div {
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.para-text {
+    justify-content: flex-start;
+    text-align: justify; 
+}
+
+.resume {
+    padding-top: 30px;
+}
