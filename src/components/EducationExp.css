@@ -1,0 +1,64 @@
+.edu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+   background-color: rgba(29, 103, 163, 0.671);
+   height: 650px;
+   width: 350px;
+   margin: 40px;
+   border-radius: 10px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   padding: 15px;
+}
+
+.container2 {
+    background-color: rgba(29, 113, 192, 0.671);
+    height: 650px;
+    width: 350px;
+    margin: 40px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+.container3 {
+    background-color: rgba(75, 75, 235, 0.623);
+    height: 600px;
+    width: 350px;
+    margin: 40px;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cnslogo {
+    height: 80px;
+    padding-bottom: 0;
+}
+
+h4  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h5 {
+    margin-top: 5px;
+}
+
+.utcnlogo {
+    height: 80px;
+    padding-bottom: 0;
+    background-color: transparent;
+}
+
+.scitlogo {
+    height: 80px;
+    padding-bottom: 0;
+    background-color: transparent;
+}
+
+.first-year {
+    cursor: pointer;
+}

@@ -1,22 +1,67 @@
 import { AppLogo } from "./AppLogo";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Component } from "react";
+import React, { useState } from "react";
 
 export function Header() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   return (
     <div className="app-header">
       <AppLogo />
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <NavLink
+        activeStyle={{
+          borderBottom: "3px solid black",
+          fontFamily: "Audiowide , sans-serif"
+        }}
+        className="nav-button"
+        to="/home"
+        style={{ textDecoration: "none" }}
+      >
         <p className="header-links"> Home </p>
-      </Link>
-      <Link to="/aboutme" style={{ textDecoration: "none" }}>
+      </NavLink>
+      <NavLink
+        activeStyle={{
+          borderBottom: "3px solid black",
+          fontFamily: "Audiowide , sans-serif"
+        }}
+        className="nav-button"
+        to="/aboutme"
+        style={{ textDecoration: "none" }}
+      >
         <p className="header-links"> About me </p>
-      </Link>
-      <p className="header-links"> Education </p>
-      <p className="header-links"> Skills </p>
-      <Link to="/contact" style={{ textDecoration: "none" }}>
+      </NavLink>
+      <NavLink
+      activeStyle={{
+        borderBottom: "3px solid black",
+        fontFamily: "Audiowide , sans-serif"
+      }}
+        className="nav-button"
+        to="/educationexp"
+        style={{ textDecoration: "none" }}
+      >
+        <p className="header-links"> Education/Experience </p>
+      </NavLink>
+      <NavLink 
+      className="nav-button"
+      activeStyle={{
+        borderBottom: "3px solid black",
+        fontFamily: "Audiowide , sans-serif"
+      }}
+      to="/skills" style={{ textDecoration: "none" }}>
+        <p className="header-links"> Skills </p>
+      </NavLink>
+      <NavLink 
+      className="nav-button"
+      activeStyle={{
+        borderBottom: "3px solid black",
+        fontFamily: "Audiowide , sans-serif"
+      }}
+      to="/contact" style={{ textDecoration: "none" }}>
         <p className="header-links"> Contact </p>
-      </Link>
+      </NavLink>
     </div>
   );
 }

@@ -1,0 +1,62 @@
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.three-container {
+  display: flex;
+  margin: 50px;
+  background-color: rgba(0, 89, 255, 0.575);
+  border-radius: 20px;
+}
+
+.container-div {
+  margin-top: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 60px;
+  justify-content: right;
+  text-align: center;
+}
+
+.text-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.tech-skills {
+  display: block;
+  align-items: center;
+  justify-content: right;
+}
+
+.skill-text {
+  margin-right: 20px;
+}
+
+.html5 {
+    color: rgb(227, 76, 38);
+}
+
+.css {
+    color: rgb(38, 77, 228);
+}
+
+.javascript {
+    color: rgb(240, 219, 79);
+}
+
+.react {
+    color: rgb(97, 219, 251);
+}
+
+.github {
+    color: rgb(173, 92, 81);
+}
+
+h4 {
+    margin: 10px;
+}

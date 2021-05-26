@@ -9,10 +9,11 @@
 .page-container {
     width: 500px;
     height: 1000px;
-    background-color: rgb(0, 102, 255);
+    background-color: rgba(0, 102, 255, 0.63);
     align-items: center;
     border-radius: 5%;
     padding: 20px;
+    
     
 }
 
@@ -29,4 +30,11 @@
 
 .resume {
     padding-top: 30px;
+}
+.h1-header {
+    padding: 20px;
+}
+
+.horizontal-line {
+    background-color: blue;
 }

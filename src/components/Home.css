@@ -16,16 +16,29 @@
 }
 
 .app-home p {
-  padding: 20px;
+  padding: 5px;
   font-size: 25px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
+  font-family: "Audiowide";
+  font-weight: 700;
 }
 .icon-container > * {
   padding: 15px;
 }
 
+.icon-container {
+  padding-bottom: 40px;
+}
+
 .parag {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button-home {
+  padding-top: 30px;
+  color: black;
+}
+
+.ata {
+  color: black;
 }

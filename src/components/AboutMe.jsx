@@ -3,43 +3,88 @@ import "./AboutMe.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import DarocziIstvanResume from "./Daroczi_Istvan_CV.docx";
+import Typed from "react-typed";
+import { Typography } from "@material-ui/core";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-export function AboutMe() {
-  return (
-    <div className="app-aboutme">
-      <div className="page-container">
-        <img src={avatarPic} alt="avatar" className="avatar-pic" />
-        <div className="aboutme-div">
-          <h1 className="h1-header"> Daróczi István</h1>
-          <h3 className="h3-header"> Junior Front-end Web-developer</h3>
-          <h2 className="text"> About me </h2>
-          <p className="para-text">
-            Hello, my name is Isti fmiermv iermsiv mersib mers ibmeris bmei
-            bmeir bmei sbmbm ibmerb iembi em rm mbierm biermbierb mierbm ierm
-            biem bmreibmesribmeirsbmerisbmiesrmb iermbiermbiermbier mibm ierm
-            iermb ierm iemr miemreribmiskroaekfoeramvroemv ioerm bior
-          </p>
-        </div>
-        <hr className="horizontal-line" />
-        <div className="hobbies">
-          <h2 className="text">Hobbies</h2>
-          <p className="para-text">
-            I'm a very outgoing person, so most of my hobbies are related to
-            travelling, hiking, unexpected roadtrips,discovering new places,new
-            people,learning about other people's culture and traditions. I
-            believe travelling broadens the mind and this is what makes me feel
-            fulfilled. I do also enjoy a good read and I'm always looking to try
-            new things and to learn more.
-          </p>
-        </div>
-        <hr className="horizontal-line" />
-        <div className="resume">
+export class AboutMe extends Component {
+  componentDidMount() {
+    AOS.init({
+      duration: 2000,
+    });
+    AOS.refresh();
+  }
+
+  render() {
+    return (
+      <div className="app-aboutme">
+        <div className="page-container">
+          <img src={avatarPic} alt="avatar" className="avatar-pic" />
+          <div className="aboutme-div">
+            <Typography
+              className="h1-header"
+              style={{ color: "black", fontFamily: "David Libre" }}
+              variant="h4"
+            >
+              <Typed
+                strings={[
+                  "<span>&lt;</span>" + "Daróczi István/" + "<span>&gt;</span>",
+                ]}
+                typeSpeed={60}
+              ></Typed>
+            </Typography>
+            <Typography className="h3-header" variant="h5">
+              <Typed
+                strings={[" Junior Front-End Developer", "Web Designer"]}
+                typeSpeed={40}
+                backSpeed={40}
+                loop
+              />
+            </Typography>
+            <div className="aboutme" data-aos="fade-right">
+              <h2 className="text"> About me </h2>
+              <p className="para-text">
+                Hello, my name is Isti and welcome to my website! I'm a young
+                junior front-end web-developer to become. On this webpage you
+                can find my online CV, everything that is important or at least
+                interesting about me. I am looking to learn more every day, I'm
+                passionated about technology and I like to find out how things
+                work around me. I also enjoy working both as a team or
+                individually. I'm a flexible person who gets accustomed really
+                fast. If you want to get in touch you can find me in{" "}
+                <Link to="/contact" style={{ textDecoration: "none" }}>
+                  Contact{" "}
+                </Link>
+                menupoint. My goal is to become a full-time Front-End
+                Web-Developer because I like to see immediate results of my
+                work.
+              </p>
+            </div>
+          </div>
+          <hr className="horizontal-line" />
+          <div className="hobbies" data-aos="fade-left">
+            <h2 className="text">Hobbies</h2>
+            <p className="para-text">
+              In my free time I enjoy to read articles, books and watch videos
+              about the new technologies, about my curiosities(things/devices
+              principle of operation) and obviously for entertainment purposes.
+              Furthermore I like to spend time in the nature and to visit new
+              places, cultures. So my hobby is to explore and to understand the
+              world I'm surrounded by.
+            </p>
+          </div>
+          <hr className="horizontal-line" />
+          <div className="resume" data-aos="fade-up">
             <p> Download my resume:</p>
-        <a href={DarocziIstvanResume}   download={DarocziIstvanResume} >
-        <FontAwesomeIcon className="fa-4x gitHub" icon={faFileDownload} />
-        </a>
+            <a href={DarocziIstvanResume} download={DarocziIstvanResume}>
+              <FontAwesomeIcon className="fa-4x gitHub" icon={faFileDownload} />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
