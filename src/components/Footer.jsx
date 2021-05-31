@@ -1,5 +1,4 @@
 import "./Footer.css";
-// import React, { useEffect } from "react";
 
 export function Footer() {
   return (

@@ -9,7 +9,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
 export class AboutMe extends Component {
   componentDidMount() {
     AOS.init({
@@ -26,7 +25,7 @@ export class AboutMe extends Component {
           <div className="aboutme-div">
             <Typography
               className="h1-header"
-              style={{ color: "black", fontFamily: "David Libre" }}
+              style={{ color: "black", fontFamily: "Arial" }}
               variant="h4"
             >
               <Typed
@@ -48,8 +47,8 @@ export class AboutMe extends Component {
               <h2 className="text"> About me </h2>
               <p className="para-text">
                 Hello, my name is Isti and welcome to my website! I'm a young
-                junior front-end web-developer to become. On this webpage you
-                can find my online CV, everything that is important or at least
+                aspiring front-end web-developer. On this webpage you can find
+                my online CV, everything that is important or at least
                 interesting about me. I am looking to learn more every day, I'm
                 passionated about technology and I like to find out how things
                 work around me. I also enjoy working both as a team or

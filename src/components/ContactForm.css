@@ -14,7 +14,7 @@
   font-size: large;
   background: transparent;
   border-radius: 5px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Arial";
 }
 
 .inputemail {
@@ -26,7 +26,7 @@
   border-radius: 5px;
   font-weight: 800;
   font-size: large;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Arial";
 }
 
 .inputemail::placeholder {
@@ -50,7 +50,7 @@
   border-radius: 5px;
   font-weight: 800;
   font-size: large;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Arial";
 }
 
 .message-sent {

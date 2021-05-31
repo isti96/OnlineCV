@@ -1,7 +1,5 @@
 import { Component } from "react";
-import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-
 import "./ContactForm.css";
 
 export class ContactForm extends Component {
@@ -96,7 +94,6 @@ export class ContactForm extends Component {
           type="submit"
           value="Send"
           variant="contained"
-          color="primary"
           onClick={this.handleAll}
         >
           {" "}

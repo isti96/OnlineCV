@@ -1,18 +1,15 @@
 .app-footer {
-height: 50px;
+  height: 50px;
   right: 0;
-  bottom: 0;
   left: 0;
-  position: absolute;
+  bottom: 0;
+  position: fixed;
   background-color: black;
   color: white;
   text-align: center;
-  
+  font-family: "Arial";
 }
-.container-footer {
-  display: flex;
-  /* flex-direction: column; */
-}
+
 .copyright {
   align-self: center;
   justify-items: center;

@@ -30,14 +30,22 @@ export class Home extends Component {
           <p data-aos="fade-left"> István </p>
         </div>
         <div className="icon-container">
-          <a href="https://github.com/isti96?tab=repositories" target="_blank">
+          <a
+            href="https://github.com/isti96?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon
               className="fa-4x github"
               icon={faGithub}
               data-aos="fade-right"
             />
           </a>
-          <a href="https://www.instagram.com/instapista96/" target="_blank">
+          <a
+            href="https://www.instagram.com/instapista96/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon
               className="fa-4x instagram"
               icon={faInstagram}
@@ -45,7 +53,11 @@ export class Home extends Component {
               data-aos="fade-right"
             />
           </a>
-          <a href="https://www.facebook.com/isti.daroczi" target="_blank">
+          <a
+            href="https://www.facebook.com/isti.daroczi"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon
               className="fa-4x facebook"
               icon={faFacebook}
@@ -56,6 +68,7 @@ export class Home extends Component {
           <a
             href="https://www.linkedin.com/in/istv%C3%A1n-dar%C3%B3czi-236748200/"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon
               className="fa-4x linkedin"
@@ -64,7 +77,8 @@ export class Home extends Component {
             />
           </a>
         </div>
-        <Button data-aos="fade-up"
+        <Button
+          data-aos="fade-up"
           className="button-home"
           size="small"
           color="primary"
@@ -73,7 +87,11 @@ export class Home extends Component {
           variant="contained"
           onClick={this.handleAll}
         >
-          <Link className="ata" to="/contact" style={{ textDecoration: "none" }}>
+          <Link
+            className="button-link"
+            to="/contact"
+            style={{ textDecoration: "none" }}
+          >
             Contact me{" "}
           </Link>
         </Button>

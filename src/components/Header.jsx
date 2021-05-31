@@ -1,67 +1,56 @@
 import { AppLogo } from "./AppLogo";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
-import { Component } from "react";
 import React, { useState } from "react";
+import "./AppLogo.css";
 
 export function Header() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  const closeMobileMenu = () => setClick(false);
+
   return (
-    <div className="app-header">
-      <AppLogo />
+    <div className={click ? "app-header-click" : "app-header"}>
+      <AppLogo className="app-logo" />
       <NavLink
-        activeStyle={{
-          borderBottom: "3px solid black",
-          fontFamily: "Audiowide , sans-serif"
-        }}
-        className="nav-button"
+        className={click ? "nav-button-none" : "nav-button"}
         to="/home"
-        style={{ textDecoration: "none" }}
+        onClick={closeMobileMenu}
       >
         <p className="header-links"> Home </p>
       </NavLink>
       <NavLink
-        activeStyle={{
-          borderBottom: "3px solid black",
-          fontFamily: "Audiowide , sans-serif"
-        }}
-        className="nav-button"
+        className={click ? "nav-button-none" : "nav-button"}
         to="/aboutme"
-        style={{ textDecoration: "none" }}
+        onClick={closeMobileMenu}
       >
         <p className="header-links"> About me </p>
       </NavLink>
       <NavLink
-      activeStyle={{
-        borderBottom: "3px solid black",
-        fontFamily: "Audiowide , sans-serif"
-      }}
-        className="nav-button"
+        className={click ? "nav-button-none" : "nav-button"}
         to="/educationexp"
-        style={{ textDecoration: "none" }}
+        onClick={closeMobileMenu}
       >
         <p className="header-links"> Education/Experience </p>
       </NavLink>
-      <NavLink 
-      className="nav-button"
-      activeStyle={{
-        borderBottom: "3px solid black",
-        fontFamily: "Audiowide , sans-serif"
-      }}
-      to="/skills" style={{ textDecoration: "none" }}>
+      <NavLink
+        className={click ? "nav-button-none" : "nav-button"}
+        to="/skills"
+        onClick={closeMobileMenu}
+      >
         <p className="header-links"> Skills </p>
       </NavLink>
-      <NavLink 
-      className="nav-button"
-      activeStyle={{
-        borderBottom: "3px solid black",
-        fontFamily: "Audiowide , sans-serif"
-      }}
-      to="/contact" style={{ textDecoration: "none" }}>
+      <NavLink
+        className={click ? "nav-button-none" : "nav-button"}
+        to="/contact"
+        onClick={closeMobileMenu}
+      >
         <p className="header-links"> Contact </p>
       </NavLink>
+      <a class="icon" onClick={handleClick}>
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   );
 }

@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 90px;
 }
 
 .three-container {
@@ -38,25 +40,49 @@
 }
 
 .html5 {
-    color: rgb(227, 76, 38);
+  color: rgb(227, 76, 38);
 }
 
 .css {
-    color: rgb(38, 77, 228);
+  color: rgb(38, 77, 228);
 }
 
 .javascript {
-    color: rgb(240, 219, 79);
+  color: rgb(240, 219, 79);
 }
 
 .react {
-    color: rgb(97, 219, 251);
+  color: rgb(97, 219, 251);
 }
 
 .github {
-    color: rgb(173, 92, 81);
+  color: rgb(173, 92, 81);
+}
+
+h2 {
+  margin: 10px;
+  font-family: "Arial";
 }
 
 h4 {
-    margin: 10px;
+  font-family: "Times-New-Roman";
+}
+
+@media screen and (max-width: 700px) {
+  .three-container {
+    display: block;
+    margin: 50px;
+    background-color: rgba(0, 89, 255, 0.575);
+    border-radius: 20px;
+    width: 80%;
+  }
+
+  .container-div {
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px;
+    justify-content: right;
+    text-align: center;
+  }
 }

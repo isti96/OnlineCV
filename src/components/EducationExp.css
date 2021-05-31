@@ -1,64 +1,93 @@
 .edu-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 90px;
 }
 
 .container1 {
-   background-color: rgba(29, 103, 163, 0.671);
-   height: 650px;
-   width: 350px;
-   margin: 40px;
-   border-radius: 10px;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   padding: 15px;
+  background-color: rgba(29, 103, 163, 0.671);
+  height: 650px;
+  width: 350px;
+  margin: 40px;
+  border-radius: 10px;
+  font-family: "Arial";
+  padding: 15px;
 }
 
 .container2 {
-    background-color: rgba(29, 113, 192, 0.671);
-    height: 650px;
-    width: 350px;
-    margin: 40px;
-    border-radius: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 15px;
+  background-color: rgba(29, 113, 192, 0.671);
+  height: 650px;
+  width: 350px;
+  margin: 40px;
+  border-radius: 10px;
+  font-family: "Arial";
+  padding: 15px;
 }
 
 .container3 {
-    background-color: rgba(75, 75, 235, 0.623);
-    height: 600px;
-    width: 350px;
-    margin: 40px;
-    border-radius: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(75, 75, 235, 0.623);
+  height: 600px;
+  width: 350px;
+  margin: 40px;
+  border-radius: 10px;
+  font-family: "Arial";
 }
 
 .cnslogo {
-    height: 80px;
-    padding-bottom: 0;
+  height: 80px;
+  padding-bottom: 0;
 }
 
-h4  {
-    margin-top: 5px;
-    margin-bottom: 5px;
+h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 h5 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .utcnlogo {
-    height: 80px;
-    padding-bottom: 0;
-    background-color: transparent;
+  height: 80px;
+  padding-bottom: 0;
+  background-color: transparent;
 }
 
 .scitlogo {
-    height: 80px;
-    padding-bottom: 0;
-    background-color: transparent;
+  height: 80px;
+  padding-bottom: 0;
+  background-color: transparent;
 }
 
-.first-year {
-    cursor: pointer;
+.dropdown .dropup {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .edu-container {
+    display: block;
+  }
+
+  .container1 {
+    background-color: rgba(29, 103, 163, 0.671);
+    height: 650px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-family: "Arial";
+    padding: 15px;
+  }
+
+  .container2 {
+    background-color: rgba(29, 113, 192, 0.671);
+    height: 650px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    font-family: "Arial";
+    padding: 15px;
+  }
 }

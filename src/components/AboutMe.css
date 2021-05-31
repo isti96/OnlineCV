@@ -1,40 +1,57 @@
 .app-aboutme {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 90px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 90px;
 }
 
 .page-container {
-    width: 500px;
-    height: 1000px;
+  width: 500px;
+  height: 1100px;
+  background-color: rgba(0, 102, 255, 0.63);
+  align-items: center;
+  border-radius: 5%;
+  padding: 20px;
+}
+
+.aboutme-div {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.para-text {
+  justify-content: flex-start;
+  text-align: justify;
+  font-family: "Times-New-Roman";
+}
+
+.resume {
+  padding-top: 30px;
+}
+.h1-header {
+  padding: 20px;
+}
+
+.horizontal-line {
+  background-color: blue;
+}
+
+.h3-header {
+  font-family: "Arial";
+}
+
+.text {
+  font-family: "Arial";
+}
+
+@media screen and (max-width: 700px) {
+  .page-container {
+    width: 75%;
+    height: 1100px;
     background-color: rgba(0, 102, 255, 0.63);
     align-items: center;
     border-radius: 5%;
     padding: 20px;
-    
-    
-}
-
-.aboutme-div {
-    align-items: center;
-    justify-content: flex-start;
-
-}
-
-.para-text {
-    justify-content: flex-start;
-    text-align: justify; 
-}
-
-.resume {
-    padding-top: 30px;
-}
-.h1-header {
-    padding: 20px;
-}
-
-.horizontal-line {
-    background-color: blue;
+  }
 }
