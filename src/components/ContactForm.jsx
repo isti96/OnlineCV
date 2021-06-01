@@ -79,7 +79,7 @@ export class ContactForm extends Component {
         />
         <textarea
           label="Message"
-          multiline
+          multiline="true"
           rows={4}
           placeholder="Type a message"
           className="inputmessage"

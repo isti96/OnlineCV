@@ -48,8 +48,8 @@ export function Header() {
       >
         <p className="header-links"> Contact </p>
       </NavLink>
-      <a class="icon" onClick={handleClick}>
-        <i class="fa fa-bars"></i>
+      <a className="icon" onClick={handleClick}>
+        <i className="fa fa-bars"></i>
       </a>
     </div>
   );
