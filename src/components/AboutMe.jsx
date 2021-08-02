@@ -2,7 +2,7 @@ import avatarPic from "./avatar.jpg";
 import "./AboutMe.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
-import DarocziIstvanResume from "./Daroczi_Istvan_CV.docx";
+import DarocziIstvanResume from "./DarocziIstvan-CV.pdf";
 import Typed from "react-typed";
 import { Typography } from "@material-ui/core";
 import AOS from "aos";
