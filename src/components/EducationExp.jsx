@@ -206,27 +206,25 @@ export class EducationExp extends Component {
               />
             )}
           </h5>
-          
-            {this.state.visibility5 ? (
-              <div>
-                <h6>
-                  I have attended 5 month course at the informal School of IT
-                  and I’ve learned Web development concepts such as HTML5, CSS3,
-                  JavaScript (ECMAScript6 OOP concepts,variables, primitive
-                  types, AJAX, API, functions, hoisting, DOM ) and ReactJS. I’ve
-                  acquired knowledge in how to build a responsive, functional
-                  website. We had weekly projects which where meant to improve
-                  our knowledge and practice. We also learned about Github basic
-                  principles and commands. We had a final project, where we had
-                  to make our single-page-app online CV. The project can be
-                  found on my GitHub page and also there is a link in the
-                  contact section for it.
-                </h6>
-              </div>
-            ) : (
-              ""
-            )}
-          
+
+          {this.state.visibility5 ? (
+            <div>
+              <h6>
+                I have attended 5 month course at the informal School of IT and
+                I’ve learned Web development concepts such as HTML5, CSS3,
+                JavaScript (ECMAScript6 OOP concepts,variables, primitive types,
+                AJAX, API, functions, hoisting, DOM ) and ReactJS. I’ve acquired
+                knowledge in how to build a responsive, functional website. We
+                had weekly projects which where meant to improve our knowledge
+                and practice. We also learned about Github basic principles and
+                commands. We had a final project, where we had to make our
+                single-page-app online CV. The project can be found on my GitHub
+                page and also there is a link in the contact section for it.
+              </h6>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     );
