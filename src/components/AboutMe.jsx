@@ -28,12 +28,7 @@ export class AboutMe extends Component {
               style={{ color: "black", fontFamily: "Arial" }}
               variant="h4"
             >
-              <Typed
-                strings={[
-                  "<span>&lt;</span>" + "Daróczi István/" + "<span>&gt;</span>",
-                ]}
-                typeSpeed={60}
-              ></Typed>
+              <Typed strings={["Daróczi István"]} typeSpeed={60}></Typed>
             </Typography>
             <Typography className="h3-header" variant="h5">
               <Typed
