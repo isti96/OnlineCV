@@ -63,6 +63,7 @@ export class ContactForm extends Component {
           placeholder="Type name"
           style={{
             border: this.state.isInvalidName ? "1px solid red" : undefined,
+            fontFamily: "DM Sans",
           }}
           variant="outlined"
           onChange={this.handleNameChange}
@@ -73,6 +74,7 @@ export class ContactForm extends Component {
           placeholder="Type e-mail"
           style={{
             border: this.state.isInvalidEmail ? "1px solid red" : undefined,
+            fontFamily: "DM Sans",
           }}
           variant="outlined"
           onChange={this.handleEmailChange}
@@ -85,6 +87,7 @@ export class ContactForm extends Component {
           className="inputmessage"
           style={{
             border: this.state.isInvalidMessage ? "1px solid red" : undefined,
+            fontFamily: "DM Sans",
           }}
           onChange={this.handleMessageChange}
         />

@@ -6,6 +6,7 @@ import {
   faCss3,
   faJs,
   faGithub,
+  faNode,
 } from "@fortawesome/free-brands-svg-icons";
 import ProgressBar from "@ramonak/react-progress-bar";
 import React from "react";
@@ -43,11 +44,16 @@ export class Skills extends Component {
                 <FontAwesomeIcon className="fa-3x html5" icon={faHtml5} />
               </div>
               <div className="text-icon">
-                <h4 className="skill-text">CSS</h4>
+                <h4 className="skill-text">CSS3 / LESS / Tailwind</h4>
                 <FontAwesomeIcon className="fa-3x css" icon={faCss3} />
               </div>
               <div className="text-icon">
-                <h4 className="skill-text">Javascript</h4>
+                <div className="javascriptDiv">
+                  <div className="skill-text">Javascript/Typescript</div>
+                  <div className="skill-text">
+                    (ReactJS, AngularJS, Aurelia, Svelte Kit)
+                  </div>
+                </div>
                 <FontAwesomeIcon className="fa-3x javascript" icon={faJs} />
               </div>
               <div className="text-icon">
@@ -57,6 +63,19 @@ export class Skills extends Component {
               <div className="text-icon">
                 <h4 className="skill-text">Github</h4>
                 <FontAwesomeIcon className="fa-3x github" icon={faGithub} />
+              </div>
+              <div className="text-icon">
+                <h4 className="skill-text">NodeJS</h4>
+                <FontAwesomeIcon className="fa-3x react" icon={faNode} />
+              </div>
+              <div className="text-icon">
+                <h4 className="skill-text">C# - .NET framework</h4>
+              </div>
+              <div className="text-icon">
+                <h4 className="skill-text">MongoDB database (Mongoose)</h4>
+              </div>
+              <div className="text-icon">
+                <h4 className="skill-text">SQL database</h4>
               </div>
             </div>
           </div>

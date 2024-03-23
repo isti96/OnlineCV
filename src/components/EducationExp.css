@@ -4,6 +4,7 @@
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 90px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .container1 {
@@ -12,7 +13,6 @@
   width: 350px;
   margin: 40px;
   border-radius: 10px;
-  font-family: "Arial";
   padding: 15px;
 }
 
@@ -22,7 +22,6 @@
   width: 350px;
   margin: 40px;
   border-radius: 10px;
-  font-family: "Arial";
   padding: 15px;
 }
 
@@ -32,7 +31,6 @@
   width: 350px;
   margin: 40px;
   border-radius: 10px;
-  font-family: "Arial";
 }
 
 .cnslogo {
@@ -77,6 +75,7 @@ h6 {
 @media screen and (max-width: 600px) {
   .edu-container {
     display: block;
+    font-family: "DM Sans", sans-serif;
   }
 
   .container1 {
@@ -86,7 +85,6 @@ h6 {
     margin: auto;
     margin-bottom: 20px;
     border-radius: 10px;
-    font-family: "Arial";
     padding: 15px;
   }
 
@@ -96,7 +94,6 @@ h6 {
     width: 80%;
     margin: auto;
     border-radius: 10px;
-    font-family: "Arial";
     padding: 15px;
   }
 }

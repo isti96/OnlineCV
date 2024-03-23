@@ -15,7 +15,7 @@ export function Header() {
       <AppLogo className="app-logo" />
       <NavLink
         className={click ? "nav-button-none" : "nav-button"}
-        to="/home"
+        to="/"
         onClick={closeMobileMenu}
       >
         <p className="header-links"> Home </p>

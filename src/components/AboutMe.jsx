@@ -25,12 +25,16 @@ export class AboutMe extends Component {
           <div className="aboutme-div">
             <Typography
               className="h1-header"
-              style={{ color: "black", fontFamily: "Arial" }}
+              style={{ color: "black", fontFamily: "DM Sans" }}
               variant="h4"
             >
               <Typed strings={["Daróczi István"]} typeSpeed={60}></Typed>
             </Typography>
-            <Typography className="h3-header" variant="h5">
+            <Typography
+              className="h3-header"
+              style={{ color: "black", fontFamily: "DM Sans" }}
+              variant="h5"
+            >
               <Typed
                 strings={[" Junior Front-End Developer", "Web Designer"]}
                 typeSpeed={40}
@@ -41,20 +45,20 @@ export class AboutMe extends Component {
             <div className="aboutme" data-aos="fade-right">
               <h2 className="text"> About me </h2>
               <p className="para-text">
-                Hello, my name is Isti and welcome to my website! I'm a young
-                aspiring front-end web-developer. On this webpage you can find
-                my online CV, everything that is important or at least
-                interesting about me. I am looking to learn more every day, I'm
-                passionated about technology and I like to find out how things
-                work around me. I also enjoy working both as a team or
-                individually. I'm a flexible person who gets accustomed really
-                fast. If you want to get in touch you can find me in{" "}
+                Hello, my name is Isti and welcome to my website! I am a
+                software developer working with modern web technologies,
+                enthusiastic about collaborating in a team environment. I am a
+                flexible person who can easily adapt in new environments. My
+                patience and ambition helps me complete all my tasks. I am eager
+                to learn new technologies and grow professionally, seeking to
+                find challenges that would help me improve my knowledge. In
+                order to achieve these goals, I believe that my teamwork and
+                communication skills come in handy. If you want to get in touch
+                you can find me in{" "}
                 <Link to="/contact" style={{ textDecoration: "none" }}>
                   Contact{" "}
                 </Link>
-                menupoint. My goal is to become a full-time Front-End
-                Web-Developer because I like to see immediate results of my
-                work.
+                menupoint.
               </p>
             </div>
           </div>

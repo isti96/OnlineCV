@@ -13,12 +13,13 @@
   align-content: center;
   align-items: center;
   justify-content: center;
+  font-family: "DM Sans", sans-serif;
+
 }
 
 .app-home p {
   padding: 5px;
   font-size: 25px;
-  font-family: "Arial";
   font-weight: 700;
 }
 .icon-container > * {
@@ -32,7 +33,6 @@
 .parag {
   display: flex;
   justify-content: center;
-  font-family: "Arial";
 }
 
 .button-home {
@@ -42,5 +42,4 @@
 
 .button-link {
   color: black;
-  font-family: "Arial";
 }

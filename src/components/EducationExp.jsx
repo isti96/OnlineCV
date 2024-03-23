@@ -16,6 +16,8 @@ export class EducationExp extends Component {
       visibility3: false,
       visibility4: false,
       visibility5: false,
+      visibilityBitEngine: false,
+      visibilitySolf: false,
     };
   }
 
@@ -53,6 +55,18 @@ export class EducationExp extends Component {
   toggleVisibility5 = () => {
     this.setState({
       visibility5: !this.state.visibility5,
+    });
+  };
+
+  toggleVisibilityBitEngine = () => {
+    this.setState({
+      visibilityBitEngine: !this.state.visibilityBitEngine,
+    });
+  };
+
+  toggleVisibilitySolf = () => {
+    this.setState({
+      visibilitySolf: !this.state.visibilitySolf,
     });
   };
 
@@ -142,7 +156,108 @@ export class EducationExp extends Component {
         </div>
         <div className="container2" data-aos="fade-left">
           <h2>Experience</h2>
-          <h4>2019 Oct-2020 Nov</h4>
+          <h4>2022 May - present</h4>
+          <h5 className="job-experience">
+            Full stack web developer - Solf IT
+            {this.state.visibilitySolf ? (
+              <FontAwesomeIcon
+                onClick={this.toggleVisibilitySolf}
+                className="fa-1x dropup"
+                icon={faChevronUp}
+              />
+            ) : (
+              <FontAwesomeIcon
+                onClick={this.toggleVisibilitySolf}
+                className="fa-1x dropdown"
+                icon={faChevronDown}
+              />
+            )}
+          </h5>
+          {this.state.visibilitySolf ? (
+            <div>
+              <h6>
+                <p>
+                  Analyzing product backlogs to be divided in smaller UI and
+                  backend tasks
+                </p>
+                <p>
+                  Developing and implementing new features for web-based
+                  applications
+                </p>{" "}
+                <p>Debugging to resolve technical issues</p>{" "}
+                <p>Collaborating with other developers on team projects</p>{" "}
+                <p>
+                  Used and gained experience in version control systems, ex.
+                  Azure DevOps
+                </p>{" "}
+                <p>
+                  Starting from March 2023, I am working also on the back-end
+                  side of the projects with technologies like C# - .NET
+                  framework, using SQL database
+                </p>
+                <p>
+                  Worked on team projects like a web-application where the users
+                  can manage their travel information related to work, filling
+                  in their travel-preferences, being able to access every detail
+                  about their trip, seeing every expense they have
+                </p>
+                <p>
+                  Worked on a web-app where the managers can preselect,
+                  nominate, take actions/notes and choose high potential users
+                  based on a multitude of factors and informations
+                </p>
+                <p>
+                  Worked on a resource managment app where the project managers
+                  can assign resources on different projects and the subsequent
+                  tasks, having a schedule where they can write the time
+                  assigned on a task for each user
+                </p>
+                <p>
+                  Also worked with logic apps, power apps and sharepoint lists,
+                  integrating automated workflows
+                </p>
+              </h6>
+            </div>
+          ) : (
+            ""
+          )}
+          <h4>2022 Feb - 2022 May</h4>
+          <h5 className="job-experience">
+            Internship/Assistant programmer - BitEngine Development
+            {this.state.visibilityBitEngine ? (
+              <FontAwesomeIcon
+                onClick={this.toggleVisibilityBitEngine}
+                className="fa-1x dropup"
+                icon={faChevronUp}
+              />
+            ) : (
+              <FontAwesomeIcon
+                onClick={this.toggleVisibilityBitEngine}
+                className="fa-1x dropdown"
+                icon={faChevronDown}
+              />
+            )}
+          </h5>
+          {this.state.visibilityBitEngine ? (
+            <div>
+              <h6>
+                <p>
+                  I mostly was working on the styling of the presentation page
+                  of our project in AngularJS, CSS. In addition I did some
+                  styling also on the mobile and web view of the application,
+                  which was done with Flutter (Dart)
+                </p>
+                <p>
+                  I had some contribution to the back-end development of both
+                  the presentation page and application with the help of
+                  Javascript and Node.js
+                </p>{" "}
+              </h6>
+            </div>
+          ) : (
+            ""
+          )}
+          <h4>2019 Oct - 2020 Nov</h4>
           <h5 className="job-experience">
             Topograph/Geodetic engineer - Global Topo SRL
             {this.state.visibility4 ? (

@@ -4,6 +4,7 @@
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 90px;
+  font-family: "DM Sans", sans-serif;
 }
 
 .page-container {
@@ -23,7 +24,6 @@
 .para-text {
   justify-content: flex-start;
   text-align: justify;
-  font-family: "Times-New-Roman";
 }
 
 .resume {
@@ -35,14 +35,6 @@
 
 .horizontal-line {
   background-color: blue;
-}
-
-.h3-header {
-  font-family: "Arial";
-}
-
-.text {
-  font-family: "Arial";
 }
 
 @media screen and (max-width: 700px) {
